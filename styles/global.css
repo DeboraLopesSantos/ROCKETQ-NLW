@@ -25,6 +25,7 @@ html{
 }
 
 body {
+    display: flex;
     height: 100vh;
     background: var(--background);
 }
@@ -61,7 +62,7 @@ input, button, .button{
 
 button, .button{
     font-family: 'Poppins';
-    font-weight: 500;
+    font-weight: 450;
     line-height: 0;
 
     display: flex;
@@ -83,7 +84,7 @@ button:hover, .button:hover{
 button > img
 .button > img{
     margin-right: 1rem;
-    width: 2rem;
+    width: 5rem;
 }
 
 button.outlined,
