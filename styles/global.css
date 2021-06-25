@@ -8,6 +8,7 @@
 html{
     --black:#0D114f;
     --white:#FAFAFA;
+    --red: #E83F5B;
     --ligth-blue: #E0ECFF;
     --blue: #3485ff;
     --background: #F6FAFF;
@@ -17,6 +18,7 @@ html{
     --grey-dark: #4d5e77;
     --grey-blue: #A182CD;
     --grey-ligth: #E5EAF1;
+    --grey-medium:#eaecf2;
 
      
     /* 1rem = 16px (User Agent) = á 100% (User Agent) sempre colocar qa porcentagem do font-size em 10% para facilitar a divisao do rem*/
@@ -81,10 +83,10 @@ button:hover, .button:hover{
     filter: brightness(1.2);
 }
 
-button > img
+button > img, 
 .button > img{
     margin-right: 1rem;
-    width: 5rem;
+    width: 2rem;
 }
 
 button.outlined,
@@ -93,7 +95,22 @@ button.outlined,
  color: var(--blue);
  border: .2rem solid var(--blue);
 }
+
+button.red,
+.button.red{
+ background: var(--red);
+ color: var(--white);
+
+}
+
+button.grey,
+.button.grey{
+  background: var(--grey-ligth);
+  color: var(--grey-dark);
+}
  
+/***** HEADER *****/
+
 .content header{
      width: 80%;
      margin: 3.5rem auto;
